@@ -1,3 +1,5 @@
 **/*.zip
 **/*.rar
+**/*.tar.gz
 **/*.bmp
+info.php
