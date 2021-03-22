@@ -1,0 +1,15 @@
+Instructions to use the php chart samples.
+
+1. You'll require Web Server and PHP installed to run these samples.
+2. In case you don't have already, download and install wamp / xampp.
+3. Copy the contents of this directory into server's htdocs directory - "..\wamp\www\" in case an wamp and "..\xampp\htdocs\" in case of xampp.
+4. Enter this URL "http://localhost/index.php" in your browser.
+5. It's done.
+
+
+Instructions for the examples related to database.
+
+1. Create a database with the name "canvasjs_db".
+2. Import "/mysql-dump/canvasjs_db.sql" into the database.
+
+If you have any queries or need assistance, please post on our free technical support forum at https://canvasjs.com/forums/

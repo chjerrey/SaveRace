@@ -1,0 +1,22 @@
+[
+    {
+        "name": "$badge-font-size",
+        "description": "",
+        "value": ".65rem"
+    },
+    {
+        "name": "$badge-height",
+        "description": "",
+        "value": "14px"
+    },
+    {
+        "name": "$badge-padding",
+        "description": "",
+        "value": ".05rem .15rem"
+    },
+    {
+        "name": "$badge-shadow",
+        "description": "",
+        "value": "0 0 0 2px $scheme-main"
+    }
+]

@@ -1,0 +1,25 @@
+ErrorDocument 401 /?page=error&type=401
+ErrorDocument 403 /?page=error&type=403
+ErrorDocument 404 /?page=error&type=404
+ErrorDocument 410 /?page=error&type=410
+ErrorDocument 500 /?page=error&type=500
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Bots zu Error 403
+RewriteCond %{HTTP_USER_AGENT} (BLEXBot|Baiduspider|Baiduspider-video|Baiduspider-image) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (moget|ichiro|MJ12bot|AhrefsBot|Yandex|NaverBot|Yeti|YoudaoBot) [NC]
+RewriteRule ^(.*) /php/error.php?type=403 [R=403,L]
+
+# WP zu Error 403
+RewriteCond %{REQUEST_URI} ^.*/wp-(login|admin)(\.php)?$ [NC]
+RewriteRule ^(.*) - [F,L]
+
+# Verifikation
+RewriteRule ^(verify)/([a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_\-]+\.)+[a-zA-Z0-9_\-]{2,})/([0-9a-z]+)/?$ /?page=$1&mail=$2&hash=$4 [QSA,L]
+
+# allgemeine Seite
+RewriteRule ^([a-zA-Z_]+)/?$ /?page=$1 [QSA,L]
+</IfModule>

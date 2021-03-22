@@ -1,0 +1,24 @@
+{
+  "name": "bulma-graphs",
+  "version": "0.2.1",
+  "description": "Translates data into a visually pleasing graph using Bulma, but without dependence on Bulma.",
+  "main": "graphs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frizzant/bulma-graphs.git"
+  },
+  "keywords": [
+    "Bulma",
+    "extension",
+    "graphs"
+  ],
+  "author": "Erin McGowan, www.calmarsolutions.ch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frizzant/bulma-graphs/issues"
+  },
+  "homepage": "https://github.com/frizzant/bulma-graphs#readme"
+}

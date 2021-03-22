@@ -1,0 +1,15 @@
+baseURL = "https://bulma-badge.netlify.app/"
+languageCode = "en-us"
+title = "BulmaBadge"
+theme = "creativebulma"
+[markup]
+  [markup.highlight]
+    style = "manni"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "how-to"
+    name = "How-To"
+    url = "#"
+    weight = 20

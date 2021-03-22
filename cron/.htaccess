@@ -1,0 +1,5 @@
+ErrorDocument 401 /php/error.inc.php?type=401
+ErrorDocument 403 /php/error.inc.php?type=403
+ErrorDocument 404 /php/error.inc.php?type=404
+ErrorDocument 410 /php/error.inc.php?type=410
+ErrorDocument 500 /php/error.inc.php?type=500
